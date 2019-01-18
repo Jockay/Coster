@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jockay.apmt.view.activities.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/llResult"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/colorHoloGreenDark"
+        android:gravity="center_vertical"
+        android:weightSum="1"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            >
+            <!--<ImageView-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:src="@drawable/ic_action_photo"-->
+                <!--/>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCostByPerson"
+                android:text="0 Ft"
+                android:textSize="@dimen/result_text_size"
+                android:drawablePadding="@dimen/drawablePadding"
+                android:drawableLeft="@drawable/ic_person_white_24dp"
+                android:drawableStart="@drawable/ic_person_white_24dp"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="15dp"
+            android:layout_height="0dp"
+            android:id="@+id/vwSpace"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCost"
+                android:text="0 Ft"
+                android:textSize="@dimen/result_text_size"
+                android:drawablePadding="@dimen/drawablePadding"
+                android:drawableLeft="@drawable/ic_group_white_24dp"
+                android:drawableStart="@drawable/ic_group_white_24dp"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_above="@id/llResult"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/llItems"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true"
+            android:divider="@drawable/divider_horizontal"
+            android:showDividers="middle"
+            android:dividerPadding="8dp"
+            />
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:weightSum="1"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical"
+    android:foregroundGravity="center_vertical"
+    android:layout_marginTop="10dp"
+    >
+    <!--android:divider="?android:dividerVertical"-->
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_logo_height"
+        android:layout_weight="0.13"
+        android:id="@+id/ivItemLogo"
+        android:background="@drawable/ic_chevron_right_white_24dp"
+        android:scaleType="fitCenter"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="item_logo" />
+    <!--android:scaleType="centerCrop"-->
+    <!--android:cropToPadding="true"-->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.72"
+        android:orientation="vertical"
+        android:id="@+id/llDetails"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTitle"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/llPrices"
+            android:weightSum="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etItemPrice"
+                android:hint="@string/price"
+                android:lines="1"
+                android:inputType="numberDecimal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_image_height"
+        android:layout_weight="0.15"
+        android:id="@+id/ibRemove"
+        android:src="@drawable/ic_list_remove"
+        android:contentDescription="Remove Item"
+        />
+
+</LinearLayout>

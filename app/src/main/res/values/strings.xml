@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name2">CostSlayer</string>
+    <string name="app_name">COSTER</string>
+    <string name="ac_new_item">ÚJ TÉTEL MÉRŐÓRÁVAL</string>
+    <string name="ac_new_item_simple">ÚJ TÉTEL</string>
+    <string name="ac_people_number">SZEMÉLYEK SZÁMA</string>
+    <string name="item_gas">GÁZ</string>
+    <string name="item_electricity">ÁRAM</string>
+    <string name="item_internet">INTERNET</string>
+    <string name="item_heat">FŰTÉS</string>
+    <string name="item_other">EGYÉB</string>
+    <string name="err_endclock_greater_than_start">A záró óraállás nem lehet kisebb, mint a kezdő!</string>
+    <string name="err_startclock_greater_than_end">A kezdő óraállás nem lehet nagyobb, mint a záró!</string>
+    <string name="ask_delete_item">Biztosan törli a tételt?</string>
+    <string name="people_number">Osztozók száma</string>
+    <string name="delete_items">Minden tétel törlése</string>
+    <string name="ask_delete_items">Biztosan törli az összes tételt a listában?</string>
+    <string name="yes">Igen</string>
+    <string name="no">Nem</string>
+    <string name="cancel">Mégse</string>
+    <string name="add_item">Tétel hozzáadása mérőórával</string>
+    <string name="add_item_simple">Tétel hozzáadása</string>
+    <string name="delete_item">Tétel törlése</string>
+    <string name="item_unit_prices">Mérőóra egységárak</string>
+    <string name="okay">OK</string>
+    <string name="item_hot_water">MELEG VÍZ</string>
+    <string name="item_cold_water">HIDEG VÍZ</string>
+    <string name="edit_title">Cím szerkesztése</string>
+    <string name="price">Költség</string>
+    <string name="push_long_to_delete">A mezők törléséhez nyomja meg hosszan!</string>
+    <string name="settings">Beállítások</string>
+</resources>
